@@ -8,7 +8,7 @@ In order for the script to function correctly you must have a reasonable connect
 
 The script will update all of the packages on your Operating System to their latest versions. It will also locate, download and compile all of the required dependencies and the requisite source code. In many instances there are statements in the scripts that place icons on the Desktop and provide essential configuration of the software. In the case of the RTL-SDR driver installation the OS must be rebooted in order to enable the udev rules which allow users other than root to use the RTL-SDR USB connection to the Raspberry Pi.
 
-Instructions on testing and setting up the Radiosonde program are at https://github.com/projecthorus/radiosonde_auto_rx/wiki
+The connection between the RTL-SDR and Raspberry Pi can be tested by executing "rtl_test" on the command line.  Additional instructions on testing and setting up the Radiosonde program are at https://github.com/projecthorus/radiosonde_auto_rx/wiki
 
 All of the scripts have detailed inline comments that explain the function of every line in the script. They are offered under GPL v3.0 and can be easily modified by any user. Approximate runtimes for the scripts are included in the script descriptions. The exact runtime depends on a number of factors including the state of the packages on your system and the speed of your Internet connection.
 
