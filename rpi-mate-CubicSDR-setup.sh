@@ -1,6 +1,6 @@
 #!/bin/sh
-#install CubicSDR (0.2.4) SoapySDR () 
-#N4XWE 7-28-2021
+#install CubicSDR (0.2.6a) SoapySDR () 
+#N4XWE 7-29-2021
 #Visit http://www.
 
 
@@ -38,7 +38,7 @@ cmake ../ -DCMAKE_BUILD_TYPE=Release
 make -j3 && sudo make install ||
   { echo 'Unable to download the SoapyRTLSDR modules'; exit 1; }
   
-#Link the SoapySDR library files
+#Link the SoapyRTLSDR library files
 sudo ldconfig  
 
 #Change to the unique directory created for the CubicSDR compile
