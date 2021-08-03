@@ -1,6 +1,6 @@
 #!/bin/sh
-#install CubicSDR (0.2.6a) wxWidgets (3.1.4) 
-#N4XWE 8-01-2021
+#install CubicSDR (0.2.6a) wxWidgets (3.1.5) 
+#N4XWE 8-02-2021
 #Visit http://www.
 
 
