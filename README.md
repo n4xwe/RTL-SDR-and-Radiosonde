@@ -14,3 +14,5 @@ The connection between the RTL-SDR and Raspberry Pi can be tested by executing "
 
 All of the scripts have detailed inline comments that explain the function of every line in the script. They are offered under GPL v3.0 and can be easily modified by any user. Approximate runtimes for the scripts are included in the script descriptions. The exact runtime depends on a number of factors including the state of the packages on your system and the speed of your Internet connection.
 
+CubicSDR scripts are available for the Raspberry Pi OS and Ubuntu MATE.  The compile time for the script iss approximately 45 minutes.  The CubicSDR dependencies ncclude arequwith wxWidgets librairies.
+
