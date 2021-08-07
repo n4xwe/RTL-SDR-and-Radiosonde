@@ -10,11 +10,13 @@ To start the script from the Command Line preface the script name with a dot sla
 
 The script will update all of the packages on your Operating System to their latest versions. It will also locate, download and compile all of the required dependencies and the requisite source code. In many instances there are statements in the scripts that place icons on the Desktop and provide essential configuration of the software. In the case of the RTL-SDR driver installation the OS must be rebooted in order to enable the udev rules which allow users other than root to use the RTL-SDR USB connection to the Raspberry Pi.
 
-The scripts that compile and install CubicSDR with RTL-SDR support have a compile time of approximately 45 minutes. The dependencies that CubicSDR needs for its compile include the wxWidgets librairies. The wxWidgets librairies alone require a compile time of 35 minutes.
+The scripts that compile and install CubicSDR with RTL-SDR support have a compile time of approximately 45 minutes. The dependencies that CubicSDR needs for its compile include the wxWidgets librairies which alone require a compile time of 35 minutes.
 
 The scripts that compile and install the auto_rx (Auto Receive) Radiosonde software packag have a compile time of approximately 15 minutes. 
 
 The connection between the RTL-SDR and Raspberry Pi can be tested by executing "rtl_test" on the command line.  Additional instructions on testing and setting up the Radiosonde auto_rx program are available at https://github.com/projecthorus/radiosonde_auto_rx/wiki
+
+A very powerful spectrum scanning and analysis program is built into the RTL-SDR utilites.  More information about using the command line "rtl_power" command can be found at http://kmkeen.com/rtl-power/
 
 All of the scripts have detailed inline comments that explain the function of every line in the script. They are offered under GPL v3.0 and can be easily modified by any user. Approximate runtimes for the scripts are included in the script descriptions. The exact runtime depends on a number of factors including the state of the packages on your system and the speed of your Internet connection.
 
