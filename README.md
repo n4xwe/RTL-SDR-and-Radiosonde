@@ -1,6 +1,6 @@
 # RTL-SDR-and-Radiosonde
 
-This folder contains BASH Scripts that install and configure RTL-SDR drivers, the auto_rx (Auto Receive) Radiosonde software package and CubicSDR with RTL-SDR support on the Raspberry Pi and Ubuntu MATE operating systems.
+This folder contains BASH Scripts that install and configure RTL-SDR drivers, the auto_rx (Auto Receive) Radiosonde software package, tools that discover LTE cellular towers and CubicSDR with RTL-SDR support on the Raspberry Pi and Ubuntu MATE operating systems.
 
 The scripts titled rpi-(name of the package) have been tested on an 8GB RPi 4 running the May 7, 2021, release of the Raspberry Pi OS 32-bit version. The scripts titled rpi-mate-(name of the package) have been tested on an 8GB RPi 4 running the 64-bit version of Ubuntu MATE 20.10. They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi OS or Ubuntu MATE Operating Systems. 
 
@@ -17,6 +17,8 @@ The scripts that compile and install the auto_rx (Auto Receive) Radiosonde softw
 The connection between the RTL-SDR and Raspberry Pi can be tested by executing "rtl_test" on the command line.  Additional instructions on testing and setting up the Radiosonde auto_rx program are available at https://github.com/projecthorus/radiosonde_auto_rx/wiki
 
 A very powerful spectrum scanning and analysis program is built into the RTL-SDR utilites.  More information about using the command line "rtl_power" command can be found at http://kmkeen.com/rtl-power/
+
+LTE Tools is a collection of tools to locate and track LTE basestation cells using very low performance RF front ends. These tools work with RTL2832 based dongles. The 'CellSearch' program can be used to search for LTE carriers within a range of frequencies.  Once an LTE frequency has been located, 'LTE-Tracker' can be used to monitor and track, in realtime, any LTE cells on that frequency.
 
 All of the scripts have detailed inline comments that explain the function of every line in the script. They are offered under GPL v3.0 and can be easily modified by any user. Approximate runtimes for the scripts are included in the script descriptions. The exact runtime depends on a number of factors including the state of the packages on your system and the speed of your Internet connection.
 
