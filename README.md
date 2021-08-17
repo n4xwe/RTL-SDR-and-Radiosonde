@@ -20,6 +20,7 @@ A very powerful spectrum scanning and analysis program is built into the RTL-SDR
 
 LTE Tools is a collection of tools to locate and track LTE basestation cells using very low performance RF front ends. These tools work with RTL2832 based dongles. The 'CellSearch' program can be used to search for LTE carriers within a range of frequencies.  Once an LTE frequency has been located, 'LTE-Tracker' can be used to monitor and track, in realtime, any LTE cells on that frequency. if you are interested in the frequency accuracy of your RTL-SDR, use CellSearch to find a local LTE tower.  Most Verizon LTE networks are are clustered around 751MHz.  On the Command Line type "CellSearch --freq-start 751000000" That command should return something like this: 
 
+
 pi@raspberrypi:~ $ CellSearch --freq-start 751000000
 LTE CellSearch v1.0.0 (release) beginning
   Search frequency: 751 MHz
