@@ -22,37 +22,73 @@ LTE Tools is a collection of tools to locate and track LTE basestation cells usi
 
 
 pi@raspberrypi:~ $ CellSearch --freq-start 751000000
+
 LTE CellSearch v1.0.0 (release) beginning
+
   Search frequency: 751 MHz
+  
   PPM: 120
+  
   correction: 1
+  
 Detached kernel driver
+
 Found Rafael Micro R820T tuner
+
 [R82XX] PLL not locked!
+
 Examining center frequency 751 MHz ...
+
 Allocating 15 zero-copy buffers
+
   Detected a cell!
+  
     cell ID: 51
+    
     RX power level: -9.62715 dB
+    
     residual frequency offset: 114.284 Hz
+    
   Detected a cell!
+  
     cell ID: 53
+    
     RX power level: -12.9478 dB
+    
     residual frequency offset: 94.7467 Hz
+    
 Detected the following cells:
+
 A: #antenna ports C: CP type ; P: PHICH duration ; PR: PHICH resource type
-CID A      fc   foff RXPWR C nRB P  PR CrystalCorrectionFactor
+
+ID A      fc   foff  RXPWR C nRB P PR CrystalCorrectionFactor
+
  51 4    751M   114h -9.63 N  50 N one 1.0000001521762091894
+
  53 4    751M  94.7h -12.9 N  50 N one 1.000000126160689673
 
 In the returned information about the Cell look for the entry with lowest foff. Copy the CrystalCorrectionFactor for that entry. Open a Python Console. Find the difference between 1 and the CrystalCorrectionFactor.  Multiplying it by one million yields the PPM of the RTL-SDR. In this example the PPM of the RTL-SDR dongle is 1e6*(1-CrystalCorrectionFactor) which equals-0.126PPM.
 
 pi@raspberrypi:~ $ python
-Python 2.7.16 (default, Oct 10 2019, 22:02:15) 
+
+Python 2.7.16 (default, Oct 10 2019, 22:02:15)
+
 [GCC 8.3.0] on linux2
+
 Type "help", "copyright", "credits" or "license" for more information.
+
 >>> 1e6*(1-1.000000126160689673)
+
+
+>>> 
+
+
+>>> 
+
+
+>>> 
 -0.12616068967297167
+
 >>> 
  
  (Control-Z closes the Python Console)
