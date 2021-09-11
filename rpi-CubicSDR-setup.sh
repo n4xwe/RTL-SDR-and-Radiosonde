@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 #Download and install the dependencies
 sudo apt -y install git build-essential automake cmake libpulse-dev libgtk-3-dev freeglut3 freeglut3-dev \
-librtlsdr-dev libfftw3-3 libfftw3-dev libatomic-ops-dev swig doxygen libtool libasound2-dev ||
+librtlsdr-dev libfftw3-3 libfftw3-dev libatomic-ops-dev swig doxygen libtool libasound2-dev libreadline-dev ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
 #Install the udev rules that enable the rtl-sdr to be used as a USB device for a non-root owner
