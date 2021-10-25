@@ -67,7 +67,7 @@ ID A      fc   foff  RXPWR C nRB P PR CrystalCorrectionFactor
 
  53 4    751M  94.7h -12.9 N  50 N one 1.000000126160689673
 
-In the returned information about the Cell look for the entry with lowest foff. Copy the CrystalCorrectionFactor for that entry. Open a Python Console. Find the difference between 1 and the CrystalCorrectionFactor.  Multiplying it by one million yields the PPM of the RTL-SDR. In this example the PPM of the RTL-SDR dongle is 1e6*(1-CrystalCorrectionFactor) which equals-0.126PPM.
+In the returned information about the Cell look for the entry with lowest foff. Copy the CrystalCorrectionFactor for that entry. Open a Python Console. Find the difference between 1 and the CrystalCorrectionFactor.  Multiplying it by one million yields the PPM of the RTL-SDR. In this example the PPM of the RTL-SDR dongle is 1e6*(1-CrystalCorrectionFactor) which equals -0.126PPM.
 
 pi@raspberrypi:~ $ python
 
