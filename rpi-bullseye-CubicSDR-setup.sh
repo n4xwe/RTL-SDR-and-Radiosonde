@@ -1,7 +1,7 @@
 #!/bin/sh
 #install CubicSDR (0.2.6a) wxWidgets (3.1.5) Hamlib (4.4)
 #N4XWE 12-12-2021
-#Tested on Raspberry Pi OS Bullseye dtd 10-30-21
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
