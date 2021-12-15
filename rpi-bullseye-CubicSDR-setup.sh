@@ -1,6 +1,6 @@
 #!/bin/sh
 #install CubicSDR (0.2.6a) wxWidgets (3.1.5) Hamlib (4.4)
-#N4XWE 12-12-2021
+#N4XWE 12-15-2021
 #Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
 
 
@@ -8,9 +8,10 @@
 sudo apt update && sudo apt upgrade -y
 
 #Download and install the dependencies
-sudo apt -y install git build-essential automake cmake libpulse-dev libgtk-3-dev freeglut3 freeglut3-dev \
-librtlsdr-dev libfftw3-3 libfftw3-dev libatomic-ops-dev swig doxygen libtool libasound2-dev \
-libreadline-dev libnova-dev libflxmlrpc-dev libtiff-dev libgd-dev libsml-dev libindi-dev ||
+sudo apt -y install git build-essential automake cmake libpulse-dev libgtk-3-dev freeglut3 \
+freeglut3-dev librtlsdr-dev libfftw3-3 libfftw3-dev libatomic-ops-dev swig doxygen libtool \
+#libnova-dev  libindi-dev \
+libasound2-dev libreadline-dev libflxmlrpc-dev libtiff-dev libgd-dev libsml-dev ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
 #Install the udev rules that enable the rtl-sdr to be used as a USB device for a non-root owner
