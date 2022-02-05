@@ -1,7 +1,7 @@
 #!/bin/sh
 #install CubicSDR (0.2.6a) wxWidgets (3.1.5) Hamlib (4.4)
 #N4XWE 12-15-2021
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit RaspiOS-bullseye dtd 2022-1-28 32-bit RaspiOS-bullseye dtd 2022-1-28 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
