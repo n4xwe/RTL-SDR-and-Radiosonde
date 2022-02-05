@@ -10,7 +10,7 @@ sudo apt update && sudo apt upgrade -y
 #Download and install the dependencies
 sudo apt -y install git build-essential automake cmake libpulse-dev libgtk-3-dev freeglut3 \
 freeglut3-dev librtlsdr-dev libfftw3-3 libfftw3-dev libatomic-ops-dev swig doxygen libtool \
-libnova-dev  libindi-dev libasound2-dev libreadline-dev libflxmlrpc-dev libtiff-dev \
+libnova-dev libindi-dev libasound2-dev libreadline-dev libflxmlrpc-dev libtiff-dev \
 libgd-dev libsml-dev ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
